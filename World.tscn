@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Surgeon.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Cell.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Virus.tscn" type="PackedScene" id=3]
-[ext_resource path="res://WallThick.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Maze.tscn" type="PackedScene" id=4]
+[ext_resource path="res://DNA-strain.tscn" type="PackedScene" id=5]
 
 [node name="World" type="Node"]
 
@@ -17,25 +18,40 @@ __meta__ = {
 }
 
 [node name="Surgeon" parent="." instance=ExtResource( 1 )]
-position = Vector2( 243.396, 536.772 )
+position = Vector2( 512, 256 )
 
 [node name="Cell" parent="." instance=ExtResource( 2 )]
-position = Vector2( 440.143, 639.112 )
+position = Vector2( 544, 256 )
+
+[node name="Cell2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 576, 256 )
+
+[node name="Cell3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 608, 256 )
+
+[node name="Cell4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 640, 256 )
+
+[node name="Cell5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 672, 256 )
+
+[node name="Cell6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 704, 256 )
 
 [node name="Virus" parent="." instance=ExtResource( 3 )]
-position = Vector2( 621.976, 417.295 )
-
-[node name="WallThick" parent="." instance=ExtResource( 4 )]
-position = Vector2( 416, 384 )
-
-[node name="WallThick5" parent="." instance=ExtResource( 4 )]
-position = Vector2( 544, 384 )
-
-[node name="WallThick2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 448, 384 )
-
-[node name="WallThick3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 480, 384 )
 
-[node name="WallThick4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 512, 384 )
+[node name="DNA-strain" parent="." instance=ExtResource( 5 )]
+position = Vector2( 128, 128 )
+
+[node name="DNA-strain2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 128, 416 )
+
+[node name="DNA-strain4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 896, 128 )
+
+[node name="DNA-strain3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 896, 416 )
+
+[node name="Maze" parent="." instance=ExtResource( 4 )]
+position = Vector2( 32, 32 )
